@@ -8,7 +8,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
 COPY ["src/weatherforecastapi/weatherforecastapi/weatherforecastapi.csproj", "weatherforecastapi/"]
 RUN dotnet restore "weatherforecastapi/weatherforecastapi.csproj"
-COPY ./src .
+COPY ./src/weatherforecastapi .
 WORKDIR "/src/weatherforecastapi"
 RUN dotnet build "weatherforecastapi.csproj" -c Release -o /app/build
 
