@@ -6,7 +6,7 @@ EXPOSE 8080
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["weatherforecastapi/weatherforecastapi.csproj", "weatherforecastapi/"]
+COPY ["src/weatherforecastapi/weatherforecastapi/weatherforecastapi.csproj", "src/weatherforecastapi/weatherforecastapi/"]
 RUN dotnet restore "weatherforecastapi/weatherforecastapi.csproj"
 COPY . .
 WORKDIR "/src/weatherforecastapi"
