@@ -13,8 +13,8 @@ namespace weatherforecastapi.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            // "Freezingqq", "Bracingqq", "Chillyqq", "Coolqq", "Mildqq", "Warmqq", "Balmyqq", "Hotqq", "Swelteringqq", "Scorchingqq"
-            "Freezingww", "Bracingww", "Chillyww", "Coolww", "Mildww", "Warmww", "Balmyww", "Hotww", "Swelteringww", "Scorchingww"
+             "Freezingqq", "Bracingqq", "Chillyqq", "Coolqq", "Mildqq", "Warmqq", "Balmyqq", "Hotqq", "Swelteringqq", "Scorchingqq"
+            //"Freezingww", "Bracingww", "Chillyww", "Coolww", "Mildww", "Warmww", "Balmyww", "Hotww", "Swelteringww", "Scorchingww"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
