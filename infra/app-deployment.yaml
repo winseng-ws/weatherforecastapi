@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: weatherforecast-api
-        image: dockerazuretestregistry007.azurecr.io/weatherforecast-api:v1
+        image: dockerazuretestregistry0071.azurecr.io/weatherforecast-api:v1
         ports:
         - containerPort: 80
         resources:
