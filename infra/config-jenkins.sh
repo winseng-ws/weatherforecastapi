@@ -36,3 +36,12 @@ sudo apt-get install apt-transport-https
 sudo apt-get update
 sudo apt-get install dotnet-runtime-3.1
 
+#Configure access
+sudo apt-get remove unscd
+sudo usermod -aG docker jenkins
+sudo usermod -aG docker azurehero
+
+sudo touch /var/lib/jenkins/jenkins.install.InstallUtil.lastExecVersion
+sudo service jenkins restart
+
+
